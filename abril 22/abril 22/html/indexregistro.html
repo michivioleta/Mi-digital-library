@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pescado fresco de Cat</title>
+    <link href="../css/estilos.css"type="text/css"rel="stylesheet">
+</head>
+<body class="gridcontainer">
+    <header class="header">
+            <ul>
+                <li id="seccion1">
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li id="seccion2"  onmouseover="ver(1)" onmouseout="ocultar(1)">
+                    <a href="#">Usuario</a>
+                    <div id="subseccion1">
+                        <p><a href="../html/indexregistro.html">REGISTRAR</a></p>
+                        <p><a href="../html/indexLOGIN.html">LOGIN</a></p>
+                    </div>
+                </li>
+                <li id="seccion3">
+                    <a href="../html/Novedades.html">Novedades</a>
+
+                </div>
+                <li id="seccion4"  onmouseover="ver(2)" onmouseout="ocultar(2)">
+                    <a href="#">Nosotros</a>
+                    <div id="subseccion2">
+
+                        <p><a href="../html/indexmision.html">Mision</a></p>
+                        <p><a href="../html/indexvision.html">Vision</a></p>
+ 
+                    </div>
+                </li>
+            </ul>
+    </header>
+    
+    <script src="../js/frontend.js"></script>
+    <div id="Contenedor">
+    <h1 id="textocontenedor">Registrarse</h1><!--creamos un boton-->
+    <h3>Mi libreria Digital</h3>
+    <div id="form">
+
+        <form id="form" action="../php/conexion.php" method="POST">
+        <input type="text" class="form-control" placeholder="Nombres" name="cajanombre">
+        <br>
+        <input type="text" class="form-control" placeholder="Apellidos"  name="cajaapellido">
+        <br>
+        <input type="text" class="form-control" placeholder="example@gmail.com"  name="cajaemail">
+        <br>
+        <input type="text" class="form-control" placeholder="Contraseña"  name="cajacontraseña">
+        <br>
+        <br>
+        <input type="submit" value="Continuar" id="BOTON">
+        </form>
+
+    </div><!--cerramos etiqueta-->
+</div>
+
+</body><!--cerramos etiqueta cuerpo-->
+
+</html><!--cerramos estructura de la pagina-->
